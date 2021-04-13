@@ -4,12 +4,16 @@ function main(){
   box.translateZ(-5);
   scene.add(box);
 
-  var camera  = new.Three.PerspectiveCamera(
+  var camera  = new THREE.PerspectiveCamera(
     45,
     window.innerWidth/window.innerHeight,
     1,
     1000
   );
+  camera.position.x = 1;
+  camera.posoition.y = 5;
+  camera.position.z = 5;
+  camera.lookAt(new THREE.Vector3(0, 0, -5));
 
   var renderer = new THREE.webGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
