@@ -1,3 +1,5 @@
+console.log(THREE)
+
 function main(){
   var scene = new THREE.Scene();
   var box = generateBox(1, 1, 1);
@@ -21,7 +23,7 @@ function main(){
 
   var renderer = new THREE.webGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  document.getElementById("webGL").appendChild(renderer.domElement);
+  document.getElementById("webgl").appendChild(renderer.domElement);
   renderer.render(scene, camera);
 }
 
