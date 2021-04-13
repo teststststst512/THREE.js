@@ -2,6 +2,7 @@ function main(){
   var scene = new THREE.Scene();
   var box = generateBox(1, 1, 1);
   box.translateZ(-5);
+  box.position.y = box.geometry.parameters.height/2;
   scene.add(box);
 
   var floor = generateFloor(10, 10);
