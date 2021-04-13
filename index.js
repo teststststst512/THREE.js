@@ -28,7 +28,7 @@ function generateBox(w, h, d){
   var geometry = new THREE.BoxGeometry(w, h, d);
   var material = new THREE.MeshBasicMaterial({
     color: 0xffffff
-  })
+  });
   var mesh = new THREE.Mesh(geometry, material);
   return mesh;
 }
