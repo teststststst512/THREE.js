@@ -7,8 +7,7 @@ function main(){
   box.position.y = box.geometry.parameters.height/2;
   scene.add(box);
 
-  var floor = generateFloor(10, 10);
-  floor.rotation.x = Math.PI/2;
+
 
   var camera  = new THREE.PerspectiveCamera(
     45,
