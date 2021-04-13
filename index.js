@@ -4,6 +4,9 @@ function main(){
   box.translateZ(-5);
   scene.add(box);
 
+  var floor = generateFloor(10);
+  floor.rotation.x = Math.PI/2;
+
   var camera  = new THREE.PerspectiveCamera(
     45,
     window.innerWidth/window.innerHeight,
@@ -29,3 +32,5 @@ function generateBox(w, h, d){
   var mesh = new THREE.Mesh(geometry, material);
   return mesh;
 }
+
+main()
