@@ -4,7 +4,7 @@ function main(){
   box.translateZ(-5);
   scene.add(box);
 
-  var floor = generateFloor(10);
+  var floor = generateFloor(10, 10);
   floor.rotation.x = Math.PI/2;
 
   var camera  = new THREE.PerspectiveCamera(
