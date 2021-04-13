@@ -16,7 +16,7 @@ function main(){
     1000
   );
   camera.position.x = 1;
-  camera.posoition.y = 5;
+  camera.position.y = 5;
   camera.position.z = 5;
   camera.lookAt(new THREE.Vector3(0, 0, -5));
 
